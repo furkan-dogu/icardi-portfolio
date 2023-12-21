@@ -7,6 +7,7 @@ import About from '../pages/about/About'
 import Contact from '../pages/contact/Contact'
 import Previous from '../pages/previous/Previous'
 import PreviousDetail from '../pages/previousDetail/PreviousDetail'
+import NotFound from '../components/Error/NotFound'
 
 const router = () => {
   return (
@@ -18,6 +19,7 @@ const router = () => {
           <Route path='/previous' element={<Previous/>} />
           <Route path='/previous/:id' element={<PreviousDetail/>} />
           <Route path='/contact' element={<Contact/>} />
+          <Route path='*' element={<NotFound/>} />
         </Routes>
         <Footer/>
     </>

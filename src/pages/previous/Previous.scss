@@ -6,7 +6,8 @@
     flex-direction: column;
     height: 80vh;
     gap: 2rem;
-    background-color: rgba(0, 0, 0, 0.3);
+    // background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
 
     &__title {
         margin-bottom: 2rem;
@@ -27,6 +28,7 @@
             margin: 0 4rem;
             opacity: .7;
             cursor: pointer;
+            box-shadow: 0 0 5px black;
 
             &:hover {
                 opacity: 1;

@@ -2,21 +2,24 @@
 @import "../../scss/variables";
 
 .previousDetails{
-    background-color: rgba(0, 0, 0, 0.3);
+    // background-color: rgba(0, 0, 0, 0.3);
     height: 80vh;
     @include flex(center,center);
     flex-direction: column;
     text-align: center;
+    
     &__text {
         text-align: center;
         font-weight: 700;
         font-size: 2rem;
+        text-shadow: 0 0 5px black;
     }
     &__image{
         width: 400px;
         height: 450px;
-        padding: 1rem;
+        // padding: 1rem;
         border-radius: 30px;
+        box-shadow: 0 0 5px black;
     }
 }
 
@@ -38,6 +41,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 5px;
+        box-shadow: 0 0 3px black;
         cursor: pointer;
     }
     &__home {

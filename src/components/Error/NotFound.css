@@ -1,0 +1,12 @@
+.notfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.notfound__title {
+    font-size: 10rem;
+    text-shadow: 0 0 50px black;
+}

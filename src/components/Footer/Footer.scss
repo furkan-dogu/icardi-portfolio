@@ -5,6 +5,7 @@
     height: 10vh;
     @include flex(space-between, center);
     padding: 1rem 2rem;
+    text-shadow: 0 0 5px black;
     .social-icons {
         @include flex(center, center);
         gap: 1rem;

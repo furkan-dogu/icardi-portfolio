@@ -6,7 +6,9 @@
     @include flex(center,center);
     height: 80vh;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.3);
+    // background-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 5px black;
+    text-align: center;
 
     h2{
         font-size: 3rem;

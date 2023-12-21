@@ -1,12 +1,17 @@
 import data from "../../helper/data";
 import { useNavigate, useParams } from "react-router-dom";
 import "./PreviousDetail.scss"
+import NotFound from "../../components/Error/NotFound";
 
 const PreviousDetail = () => {
   const navigate = useNavigate();
   const { id } = useParams();
 
   const filtered = data.filter((item) => item.id === Number(id));
+
+  if (filtered.length === 0 || !filtered[0].image || !filtered[0].desc) {
+    return <NotFound />;
+  }
 
   return (
     <>
@@ -17,6 +22,7 @@ const PreviousDetail = () => {
           className="previousDetails__image"
         />
         <p className="previousDetails__text">{filtered[0].desc}</p>
+        <p className="previousDetails__text">{filtered[0].date}</p>
       <div className="buttons">
         <button
           className="buttons__back"

@@ -6,10 +6,7 @@
     @include flex(center,center);
     flex-direction: column;
     text-align: center;
-
-    &__title{
-        color: black;
-    }
+    text-shadow: 0 0 5px black;
 
     &__name{
         color: #FDB912;
