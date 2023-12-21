@@ -1,0 +1,31 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.nav {
+    height: 10vh;
+    @include flex(space-between, center);
+    padding: 1rem 2rem;
+    &__logo {
+        width: 100px;
+    }
+    &__list {
+        @include flex(center,center);
+        gap: 1.5rem;
+        text-transform: uppercase;
+        list-style-type: none;
+    }
+    &__item a{
+        text-decoration: none; 
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: white;
+        &:hover {
+            color: $hover;
+            transition: all 1s;
+        }
+        &.active {
+            color: $hover;
+        }
+    }
+}
+

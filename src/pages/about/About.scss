@@ -1,0 +1,32 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+
+.about {
+    height: 80vh;
+    @include flex(center, center);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &__title {
+        color: $hover;
+        font-size: 3rem;
+        font-weight: 400;
+        margin-top: -2rem;
+    }
+
+    &__title2 {
+        text-align: left;
+        color: $hover;
+        font-size: 2rem;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+}

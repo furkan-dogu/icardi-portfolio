@@ -1,0 +1,25 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.footer {
+    height: 10vh;
+    @include flex(space-between, center);
+    padding: 1rem 2rem;
+    .social-icons {
+        @include flex(center, center);
+        gap: 1rem;
+
+        a{
+            font-size: 2rem;
+            color: white;
+            &:hover {
+                color: $hover;
+                transition: all 1s;
+            }
+        }
+    }
+
+    .copyright {
+        font-weight: 500;
+    }
+}

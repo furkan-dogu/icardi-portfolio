@@ -1,0 +1,26 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.home{
+    height: 80vh;
+    @include flex(center,center);
+    flex-direction: column;
+    text-align: center;
+
+    &__title{
+        color: black;
+    }
+
+    &__name{
+        color: #FDB912;
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        &--last{
+            color: #A90432;
+            font-weight: 700;
+        }
+        
+    }
+    
+}
