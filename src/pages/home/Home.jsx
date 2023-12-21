@@ -8,7 +8,7 @@ const Home = () => {
     <h1 class="home__name">
       Mauro <span class="home__name--last">Icardi</span>
     </h1>
-    <h2>Galatasaray Footballer</h2>
+    <h2 className='home__text'>Galatasaray Footballer</h2>
   </main>
   )
 }

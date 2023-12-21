@@ -10,3 +10,27 @@
     font-size: 10rem;
     text-shadow: 0 0 50px black;
 }
+
+@media screen and (max-width:1400px) {
+    .notfound__title {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width:972px) {
+    .notfound__title {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .notfound__title {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .notfound__title {
+        font-size: 2rem;
+    }
+}

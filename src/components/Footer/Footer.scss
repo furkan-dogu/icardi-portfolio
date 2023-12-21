@@ -24,3 +24,21 @@
         font-weight: 500;
     }
 }
+
+@media screen and (max-width:576px) {
+    .footer {
+        padding: 1rem;
+
+        .social-icons {
+            gap: .5rem;
+
+            a {
+                font-size: 1.5rem;
+            }
+        }
+
+        .copyright {
+            font-size: .8rem;
+        }
+    }
+}

@@ -2,11 +2,10 @@
 @import "../../scss/variables";
 
 .previous{
-    @include flex(space-between,center);
+    @include flex(center,center);
     flex-direction: column;
     height: 80vh;
-    gap: 2rem;
-    // background-color: rgba(0, 0, 0, 0.3);
+    gap: 1rem;
     padding: 1rem;
 
     &__title {
@@ -15,23 +14,89 @@
     }
 
     &__items {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        @include flex(center,center);
         gap: 2rem;
+        flex-wrap: wrap;
     }
 
     &__item {
         img{
-            width: 250px;
-            height: 300px;
+            width: 200px;
+            height: 250px;
             border-radius: 20px;
-            margin: 0 4rem;
             opacity: .7;
             cursor: pointer;
             box-shadow: 0 0 5px black;
 
             &:hover {
                 opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    .previous {
+        gap: .5rem;
+
+        &__title {
+            margin-bottom: 1rem;
+        }
+
+        &__items {
+            gap: 1rem;
+        }
+    
+        &__item {
+            img{
+                width: 150px;
+                height: 180px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .previous {
+        gap: .2rem;
+        padding: .5rem;
+
+        &__title {
+            margin-bottom: .5rem;
+            font-size: 1.5rem;
+        }
+
+        &__items {
+            gap: .8rem;
+        }
+    
+        &__item {
+            img{
+                width: 120px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:330px) {
+    .previous {
+        gap: .2rem;
+        padding: .1rem;
+
+        &__title {
+            margin-bottom: .5rem;
+            font-size: 1.2rem;
+        }
+
+        &__items {
+            gap: .4rem;
+        }
+    
+        &__item {
+            img{
+                width: 100px;
+                height: 120px;
             }
         }
     }

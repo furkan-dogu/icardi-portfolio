@@ -30,3 +30,30 @@
     }
 }
 
+@media screen and (max-width:768px) {
+    .nav {
+        padding: 1rem;
+        &__logo {
+            width: 75px;
+        }
+        &__item a {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .nav {
+        padding: .5rem;
+        &__logo {
+            width: 50px;
+        }
+        &__list {
+            gap: .5rem;
+        }
+        &__item a {
+            font-size: .7rem;
+        }
+    }
+}
+

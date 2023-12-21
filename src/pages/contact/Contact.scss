@@ -6,7 +6,6 @@
     @include flex(center,center);
     height: 80vh;
     flex-direction: column;
-    // background-color: rgba(0, 0, 0, 0.3);
     text-shadow: 0 0 5px black;
     text-align: center;
 
@@ -17,10 +16,10 @@
 
     &__item {
         @include flex(center,center);
-        flex-direction: column
+        flex-direction: column;
     }
 
-    &__icon {
+    &__icons {
         @include flex(center,center);
         gap: .5rem;
     }
@@ -29,13 +28,50 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         font-size: 1.5rem;
-        gap: 2.5rem 2rem;
-        justify-content: center;
-        align-items: center;
+        gap: 5rem;
     }
     .text-secondary{
         color: $hover;
         text-decoration: none;
         font-weight: 700;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .contact{   
+        &__list{
+            font-size: 1.2rem;
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .contact{   
+        h2{
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        &__list{
+            font-size: 1rem;
+            gap: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width:850px) {
+    .contact{   
+        h2{
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        &__icons {
+            font-weight: 600;
+        }
+        &__list{
+            grid-template-columns: 1fr;
+            font-size: 1.1rem;
+            gap: 2rem;
+        }
     }
 }

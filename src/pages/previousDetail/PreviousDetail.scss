@@ -2,7 +2,6 @@
 @import "../../scss/variables";
 
 .previousDetails{
-    // background-color: rgba(0, 0, 0, 0.3);
     height: 80vh;
     @include flex(center,center);
     flex-direction: column;
@@ -17,7 +16,6 @@
     &__image{
         width: 400px;
         height: 450px;
-        // padding: 1rem;
         border-radius: 30px;
         box-shadow: 0 0 5px black;
     }
@@ -31,7 +29,7 @@
     margin-top: 1rem;
     
     &__back {
-        background-color: #A90432;
+        background-color: $red;
         border: none;
         outline: none;
         color: white;
@@ -46,7 +44,31 @@
     }
     &__home {
         @extend .buttons__back;
-        background-color: #FDB912;
+        background-color: $yellow;
         color: black;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .previousDetails{  
+        &__text {
+            font-size: 1.8rem;
+        }
+        &__image{
+            width: 300px;
+            height: 350px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .previousDetails{  
+        &__text {
+            font-size: 1.5rem;
+        }
+        &__image{
+            width: 250px;
+            height: 300px;
+        }
     }
 }
