@@ -1,0 +1,39 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.contact{
+
+    @include flex(center,center);
+    height: 80vh;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__item {
+        @include flex(center,center);
+        flex-direction: column
+    }
+
+    &__icon {
+        @include flex(center,center);
+        gap: .5rem;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 1.5rem;
+        gap: 2.5rem 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-secondary{
+        color: $hover;
+        text-decoration: none;
+        font-weight: 700;
+    }
+}

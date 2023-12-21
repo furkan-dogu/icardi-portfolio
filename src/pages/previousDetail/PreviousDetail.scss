@@ -1,0 +1,48 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.previousDetails{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 80vh;
+    @include flex(center,center);
+    flex-direction: column;
+    text-align: center;
+    &__text {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    &__image{
+        width: 400px;
+        height: 450px;
+        padding: 1rem;
+        border-radius: 30px;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+    
+    &__back {
+        background-color: #A90432;
+        border: none;
+        outline: none;
+        color: white;
+        width: 75px;
+        padding: .5rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    &__home {
+        @extend .buttons__back;
+        background-color: #FDB912;
+        color: black;
+    }
+}

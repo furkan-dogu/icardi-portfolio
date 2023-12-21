@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer class="footer">
       <div class="social-icons">
-        <a href="https://twitter.com/MauroIcardi"  target="_blank" rel="noreferrer">
+        <a href="https://twitter.com/MauroIcardi" target="_blank" rel="noreferrer">
         <FaTwitter />
         </a>
         <a href="https://www.facebook.com/MauroIcardiOficial/?locale=tr_TR" target="_blank" rel="noreferrer">

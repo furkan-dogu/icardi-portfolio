@@ -6,6 +6,7 @@ import Home from '../pages/home/Home'
 import About from '../pages/about/About'
 import Contact from '../pages/contact/Contact'
 import Previous from '../pages/previous/Previous'
+import PreviousDetail from '../pages/previousDetail/PreviousDetail'
 
 const router = () => {
   return (
@@ -15,6 +16,7 @@ const router = () => {
           <Route path='/' element={<Home/>} />
           <Route path='/about' element={<About/>} />
           <Route path='/previous' element={<Previous/>} />
+          <Route path='/previous/:id' element={<PreviousDetail/>} />
           <Route path='/contact' element={<Contact/>} />
         </Routes>
         <Footer/>

@@ -1,0 +1,36 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.previous{
+    @include flex(space-between,center);
+    flex-direction: column;
+    height: 80vh;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &__title {
+        margin-bottom: 2rem;
+        color: $hover;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    &__item {
+        img{
+            width: 250px;
+            height: 300px;
+            border-radius: 20px;
+            margin: 0 4rem;
+            opacity: .7;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
