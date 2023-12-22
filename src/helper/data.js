@@ -25,7 +25,7 @@ const data = [
     },
     {
         id: 5,
-        image: "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/02/15674597771696.jpg",
+        image: "https://s.france24.com/media/display/9ec0b742-e79c-11e9-8ad2-005056bf87d6/w:1280/p:1x1/psg_27.jpg",
         desc: "PSG",
         date: "(2019-2022)"
     },
