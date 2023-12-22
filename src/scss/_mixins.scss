@@ -3,3 +3,7 @@
     justify-content: $jc;
     align-items: $ai;
 };
+
+@mixin shadow($px){
+    text-shadow: 0 0 $px black;
+}

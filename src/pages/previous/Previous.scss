@@ -11,12 +11,13 @@
     &__title {
         margin-bottom: 2rem;
         color: $hover;
+        @include shadow(5px);
     }
 
     &__items {
         @include flex(center,center);
         gap: 2rem;
-        flex-wrap: wrap;
+        flex-wrap: wrap;       
     }
 
     &__item {

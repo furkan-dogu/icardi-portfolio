@@ -9,7 +9,7 @@
     padding: 2rem;
     gap: 1rem;
     text-align: left;
-    text-shadow: 0 0 5px black;
+    @include shadow(5px);
 
     &__title {
         color: $hover;

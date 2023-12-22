@@ -11,7 +11,7 @@
         text-align: center;
         font-weight: 700;
         font-size: 2rem;
-        text-shadow: 0 0 5px black;
+        @include shadow(5px);
     }
     &__image{
         width: 400px;
@@ -22,9 +22,7 @@
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center,center);
     gap: .5rem;
     margin-top: 1rem;
     
@@ -35,9 +33,7 @@
         color: white;
         width: 75px;
         padding: .5rem 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center,center);
         border-radius: 5px;
         box-shadow: 0 0 3px black;
         cursor: pointer;

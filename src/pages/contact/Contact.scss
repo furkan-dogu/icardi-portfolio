@@ -6,7 +6,7 @@
     @include flex(center,center);
     height: 80vh;
     flex-direction: column;
-    text-shadow: 0 0 5px black;
+    @include shadow(5px);
     text-align: center;
 
     h2{
