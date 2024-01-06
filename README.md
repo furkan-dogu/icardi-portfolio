@@ -8,10 +8,15 @@
 
 This is a portfolio page I created using React, dedicated to Galatasaray football player Mauro Icardi. This project features swift page transitions, detailed information about past clubs, and a responsive design to ensure a seamless user experience.
 
+## Table of Contents
+
+- [Technologies Used](#technologies-used)
+- [Project Skeleton](#project-skeleton)
+- [Screenshots](#screenshots)
+
 ## Live Demo
 
 [Icardi Portfolio](https://icardi-portfolio.vercel.app/)
-
 
 ## Technologies Used
 
